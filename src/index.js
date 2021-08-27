@@ -1,3 +1,11 @@
+import ReactDOM from 'react-dom';
+import App from './App';
+
+// const profile = user[0];
+
+ReactDOM.render(<App />, document.querySelector('#root'));
+
+//=======================================================================
 // import React from 'react';
 // import ReactDOM from 'react-dom';
 // import './index.css';
