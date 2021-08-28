@@ -1,5 +1,9 @@
 import Profile from './components/Profile';
 import profile from './user.json';
+import Statistics from './components/Statistics';
+import statisticalData from './statistical-data.json';
+import FriendList from './components/FriendList';
+import friends from './friends.json';
 
 export default function App() {
   return (
@@ -9,10 +13,11 @@ export default function App() {
         name={profile.name}
         tag={profile.tag}
         location={profile.location}
-        followers={profile.stats.followers}
-        views={profile.stats.views}
-        likes={profile.stats.likes}
+        stats={profile.stats}
       />
+      <Statistics title="Upload stats" stats={statisticalData} />;
+      <Statistics stats={statisticalData} />;
+      <FriendList friends={friends} />;
     </div>
   );
 }
